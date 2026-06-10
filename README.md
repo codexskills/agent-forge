@@ -1,6 +1,6 @@
 # Agent Forge
 
-> **Production-grade AI agent skills** — 23 lifecycle skills + 3 specialist personas + 4 reference checklists.  
+> **Production-grade AI agent skills** — 24 lifecycle skills + 3 specialist personas + 4 reference checklists.  
 > A powerful, enhanced alternative to addyosmani/agent-skills.
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -80,7 +80,7 @@ Reference skills by name in prompts
 
 ---
 
-## All 23 Skills
+## All 24 Skills
 
 ### Meta — Discover which skill applies
 
@@ -95,6 +95,7 @@ Reference skills by name in prompts
 | interview-me | 5-phase interview. Confidence scoring 1-10. Escalation triggers | Requirements are vague |
 | idea-refine | SCAMPER + 6 Hats. Divergent/convergent cycles | Rough concept needs exploration |
 | spec-driven-development | Complete PRD. 11 sections, 3-gate review | Starting a new project or feature |
+| architecture-blueprint | 6-phase architecture-first workflow. Feasibility, requirements, architecture, spec, roadmap, validation. 9 output documents | Building any non-trivial system |
 
 ### Plan — Break it down
 
@@ -146,10 +147,11 @@ Reference skills by name in prompts
 
 ```
 agent-forge/
-├── skills/                             # 23 skills (22 lifecycle + 1 meta)
+├── skills/                             # 24 skills (23 lifecycle + 1 meta)
 │   ├── interview-me/                   # Define
 │   ├── idea-refine/                    # Define
 │   ├── spec-driven-development/        # Define
+│   ├── architecture-blueprint/         # Define
 │   ├── planning-and-task-breakdown/    # Plan
 │   ├── incremental-implementation/     # Build
 │   ├── test-driven-development/        # Build
@@ -196,7 +198,7 @@ AI coding agents default to the shortest path — skipping specs, tests, securit
 
 | Feature | addyosmani/agent-skills | Agent Forge |
 |---------|------------------------|-------------|
-| Skills | 23 | 23 |
+| Skills | 23 | 24 |
 | Anti-rationalization tables | 5+ entries per skill | 6+ entries per skill |
 | Agent personas | 3 | 3 |
 | Reference checklists | 4 | 4 |
