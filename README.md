@@ -1,13 +1,47 @@
-# Agent Forge
+# Agent Forge: Production-Grade AI Agent Skills Engine 🚀
 
-> **Production-grade AI agent skills** — 24 lifecycle skills + 3 specialist personas + 4 reference checklists.  
-> A powerful, enhanced alternative to addyosmani/agent-skills.
-
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/codexskills/agent-forge?style=social)](https://github.com/codexskills/agent-forge/stargazers)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-Agent Forge encodes the workflows, quality gates, and best practices that senior engineers use when building software. These are packaged so AI agents follow them consistently across every phase of development — from spec to ship.
+Agent Forge is an open-source automation framework built to deploy standardized **AI Agent Skills** natively across **OpenCode CLI**, **Claude Code**, **Cursor**, and automated CI/CD DevOps workflows. It eliminates "vibe coding" by enforcing predictable, production-grade software engineering protocols.
+
+## Key Performance Keywords & Targets
+- **OpenCode Agent Skills Framework**
+- **Test-Driven Development (TDD) AI Automation**
+- **System Design & Context Specifications Builder**
+- **Token Optimization & Code-Rot Prevention Tools**
+
+## 🛠️ Core Capabilities & AI Workflows
+
+### 1. Test-Driven Development (TDD) Loop (`test-driven-development.md`)
+Enforces strict Red-Green-Refactor execution. The AI agent builds testing infrastructure within your testing directory, validates structural code failure under pytest execution boundaries, and proceeds with production development only when zero regressions remain.
+
+### 2. Architecture Blueprint Builder (`architecture-blueprint.md`)
+An architecture-first interceptor mechanism that blocks spontaneous file patching. It maps system components, state machines, API paths, and edge cases to maintain a persistent blueprint layout file at the repository root folder.
+
+### 3. Deprecation Sentinel (`deprecation-sentinel.md`)
+Scans package manifests, monitors dependency versions, isolates structural code-rot vectors, and safely refactors obsolete class functions or module methods dynamically.
+
+### 4. Context Trimmer & Token Optimizer (`context-trimmer.md`)
+Reduces infrastructure operational spending. It handles abstract syntax tree token constraints to pass optimized file chunks into large language model systems instead of dense source dumps.
+
+## 📦 System Quick Start
+
+### Repository Initialization
+To inject Agent Forge definitions natively into your local OpenCode workspace environment:
+
+```bash
+pip install opencode-ai
+opencode models --refresh
+```
+
+### Execution Pipeline Example
+Configure your local configuration rules and call the standardized processing parameters directly:
+
+```bash
+opencode run --query "implement user authentication token verification" --skill test-driven-development
+```
 
 ---
 
@@ -159,7 +193,7 @@ agent-forge/
 │   ├── source-driven-development/      # Build
 │   ├── doubt-driven-development/       # Build
 │   ├── frontend-ui-engineering/        # Build
-│   ├── api-and-interface-design/        # Build
+│   ├── api-and-interface-design/       # Build
 │   ├── browser-testing-with-devtools/  # Verify
 │   ├── debugging-and-error-recovery/   # Verify
 │   ├── code-review-and-quality/        # Review
@@ -182,6 +216,12 @@ agent-forge/
 │   ├── performance-checklist.md
 │   └── accessibility-checklist.md
 ├── .claude/commands/                   # 7 slash commands
+├── .github/
+│   ├── workflows/                      # CI/CD automation
+│   └── repository-metadata.json        # SEO & topic metadata
+├── .opencode/
+│   ├── skills/                         # Symlinked skill references
+├── opencode.json                       # Native OpenCode configuration
 ├── docs/
 │   ├── setup-guide.md
 │   └── skill-anatomy.md
