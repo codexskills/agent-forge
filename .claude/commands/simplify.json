@@ -1,0 +1,26 @@
+{
+  "name": "simplify",
+  "description": "Simplify code for clarity without changing behavior, using code-simplification skill",
+  "steps": [
+    {
+      "prompt": "Load the code-simplification skill",
+      "skills": ["code-simplification"]
+    },
+    {
+      "prompt": "Analyze the code at: {{input}}. Identify complexity: deep nesting, over-abstraction, redundancy, unclear naming, dead code",
+      "skills": []
+    },
+    {
+      "prompt": "Simplify one pattern at a time. After each change: verify tests still pass, verify behavior unchanged",
+      "skills": ["test-driven-development"]
+    },
+    {
+      "prompt": "Check for deprecation opportunities: remove commented-out code, remove always-on feature flags, remove unreachable branches",
+      "skills": ["deprecation-and-migration"]
+    },
+    {
+      "prompt": "Final review: is the code clearer? Is there less code? Can a new team member understand it?",
+      "skills": ["code-review-and-quality"]
+    }
+  ]
+}

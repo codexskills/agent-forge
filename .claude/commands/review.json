@@ -1,0 +1,26 @@
+{
+  "name": "review",
+  "description": "Review code with code-reviewer persona and security-auditor persona for multi-axis quality check",
+  "steps": [
+    {
+      "prompt": "Load the code-review-and-quality skill and code-reviewer agent persona",
+      "skills": ["code-review-and-quality"]
+    },
+    {
+      "prompt": "Review code using the five-axis framework: correctness, maintainability, performance, security, operability. Classify each finding as Blocker/Major/Minor/Praise",
+      "skills": []
+    },
+    {
+      "prompt": "Load security-auditor persona. Perform OWASP Top 10 assessment on the code changes. Check for common vulnerabilities: injection, XSS, broken auth, IDOR",
+      "skills": []
+    },
+    {
+      "prompt": "Reference security-checklist.md and accessibility-checklist.md for additional review dimensions",
+      "skills": []
+    },
+    {
+      "prompt": "Summarize findings: list blockers that must be fixed before merge, majors that should be fixed, and minors for improvement",
+      "skills": []
+    }
+  ]
+}

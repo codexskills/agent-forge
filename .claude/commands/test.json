@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "description": "Run tests, check coverage, and fix failures. Load test-engineer persona.",
+  "steps": [
+    {
+      "prompt": "Load the test-driven-development skill and test-engineer agent persona",
+      "skills": ["test-driven-development"]
+    },
+    {
+      "prompt": "Run the full test suite and report results. Identify failed tests, flaky tests, and coverage gaps",
+      "skills": []
+    },
+    {
+      "prompt": "For each failure: diagnose root cause, fix the code (not the test), verify fix with test re-run",
+      "skills": ["debugging-and-error-recovery"]
+    },
+    {
+      "prompt": "Check coverage meets threshold (>= 80%). Add tests for uncovered critical paths. Reference testing-patterns.md for patterns",
+      "skills": []
+    },
+    {
+      "prompt": "Review tests for anti-patterns: testing implementation details, over-mocking, missing edge cases",
+      "skills": ["code-review-and-quality"]
+    }
+  ]
+}

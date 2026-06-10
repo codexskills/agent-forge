@@ -1,0 +1,30 @@
+{
+  "name": "ship",
+  "description": "Prepare for production launch: deploy, monitor, rollback plan. Uses shipping-and-launch skill.",
+  "steps": [
+    {
+      "prompt": "Load the shipping-and-launch skill",
+      "skills": ["shipping-and-launch"]
+    },
+    {
+      "prompt": "Run the pre-launch checklist: code readiness, infrastructure readiness, monitoring readiness, communication readiness",
+      "skills": []
+    },
+    {
+      "prompt": "Verify all CI/CD quality gates pass: lint, type-check, tests, coverage, build, security scan, accessibility check",
+      "skills": ["ci-cd-and-automation"]
+    },
+    {
+      "prompt": "Execute staged rollout plan: canary (5%, 10min) → quarter (25%, 30min) → half (50%, 1hr) → full (100%)",
+      "skills": []
+    },
+    {
+      "prompt": "Monitor metrics after each stage: error rate, P95 latency, business metrics. Rollback if thresholds exceeded",
+      "skills": ["performance-optimization"]
+    },
+    {
+      "prompt": "Draft launch communication using the template in shipping-and-launch skill",
+      "skills": []
+    }
+  ]
+}

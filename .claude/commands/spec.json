@@ -1,0 +1,18 @@
+{
+  "name": "spec",
+  "description": "Create a specification document for a feature or system using spec-driven-development skill",
+  "steps": [
+    {
+      "prompt": "Load the spec-driven-development skill and create a specification for: {{input}}",
+      "skills": ["spec-driven-development"]
+    },
+    {
+      "prompt": "Review the spec against: is it specific enough to implement? Are the acceptance criteria measurable? Are edge cases documented?",
+      "skills": ["documentation-and-adrs"]
+    },
+    {
+      "prompt": "Write the spec to docs/spec/ directory following project conventions",
+      "skills": []
+    }
+  ]
+}

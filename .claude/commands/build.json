@@ -1,0 +1,22 @@
+{
+  "name": "build",
+  "description": "Implement features incrementally with tests, following the plan",
+  "steps": [
+    {
+      "prompt": "Read the plan from docs/plan/ to understand the task order and dependencies",
+      "skills": ["planning-and-task-breakdown"]
+    },
+    {
+      "prompt": "Load incremental-implementation skill. Implement the next task in the plan: {{input}}",
+      "skills": ["incremental-implementation"]
+    },
+    {
+      "prompt": "Write tests first (test-driven-development), then implement. Verify all tests pass before moving to next task",
+      "skills": ["test-driven-development"]
+    },
+    {
+      "prompt": "If a significant architectural decision arises during implementation, write an ADR using documentation-and-adrs skill",
+      "skills": ["documentation-and-adrs"]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "plan",
+  "description": "Break down work into ordered, implementable tasks using planning-and-task-breakdown skill",
+  "steps": [
+    {
+      "prompt": "Load the planning-and-task-breakdown skill. Read the current spec or requirements from docs/spec/ or user input: {{input}}",
+      "skills": ["planning-and-task-breakdown"]
+    },
+    {
+      "prompt": "Break the work into small, independent tasks. Each task should be: one clear deliverable, estimable (hours not days), independently testable, ordered by dependencies",
+      "skills": []
+    },
+    {
+      "prompt": "Write the plan to docs/plan/ directory. Include task list, dependencies, estimated effort, and test strategy per task",
+      "skills": ["documentation-and-adrs"]
+    }
+  ]
+}
