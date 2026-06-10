@@ -92,7 +92,6 @@ Reference skills by name in prompts
 
 | Skill | What It Does | Use When |
 |-------|--------------|----------|
-| architecture-blueprint | 6-phase architecture-first workflow. Feasibility → Requirements → Architecture → Spec → Roadmap → Validation | Starting a new project or feature |
 | interview-me | 5-phase interview. Confidence scoring 1-10. Escalation triggers | Requirements are vague |
 | idea-refine | SCAMPER + 6 Hats. Divergent/convergent cycles | Rough concept needs exploration |
 | spec-driven-development | Complete PRD. 11 sections, 3-gate review | Starting a new project or feature |
@@ -148,7 +147,6 @@ Reference skills by name in prompts
 ```
 agent-forge/
 ├── skills/                             # 23 skills (22 lifecycle + 1 meta)
-│   ├── architecture-blueprint/         # Define
 │   ├── interview-me/                   # Define
 │   ├── idea-refine/                    # Define
 │   ├── spec-driven-development/        # Define
